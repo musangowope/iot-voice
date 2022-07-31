@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Static Template</title>
+  <link href="/styles/output.css" rel="stylesheet">
+</head>
+<body>
+
+<section class="hero-section">
+  <div class="logo">
+    Hero logo
+  </div>
+  <div class="tw-container tw-mx-auto tw-h-full">
+    <div class="tw-w-96 tw-flex tw-flex-col tw-justify-center tw-h-full">
+      <h2 class="title tw-mb-10">Hello!</h2>
+      <p class="text tw-mb-10">
+        True cloud connection voice designed for everyone
+      </p>
+      <div class="cta">
+        <button class="cta-button primary tw-uppercase" type="button">
+          Join
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tw-grid tw-grid-cols-2" style="background-color: #DFDEDC">
+  <img src="https://burst.shopifycdn.com/photos/call-centre-staff-with-headset.jpg?width=1850&format=pjpg&exif=1&iptc=1"
+       class="img-fluid"
+       alt="signup image"
+  />
+  <form class="tw-p-10">
+    <img class="tw-mx-auto tw-mb-10" src="/images/logo-image.jpg" alt="logo"/>
+    <div class="tw-grid tw-grid-cols-2 tw-gap-5 tw-mb-5">
+      <label class="tw-col-span-1">
+        <input type="text" placeholder="Name"/>
+      </label>
+      <label class="tw-col-span-1">
+        <input type="text" placeholder="Surname" />
+      </label>
+      <label class="tw-col-span-2">
+        <input type="email" placeholder="email" />
+      </label>
+      <label class="tw-col-span-2">
+        <input type="tel" placeholder="cell number" />
+      </label>
+    </div>
+    <div class="tw-text-center">
+      <button class="cta-button secondary" type="submit">
+        Sign Up
+      </button>
+    </div>
+  </form>
+</section>
+
+<section class="thankyou-joining-section tw-p-10">
+  <div class="tw-container tw-mx-auto tw-h-full">
+    <img class="tw-mx-auto tw-mb-10" src="/images/logo-image.jpg" alt="logo"/>
+
+    <div class="tw-flex">
+      <div class="text tw-w-2/3 tw-mx-auto tw-text-center tw-uppercase">
+        Thank you for joining iot voice. Let's get your app setup on your phone  within a blink
+      </div>
+    </div>
+    <div class="tw-flex tw-justify-between">
+      <div>
+        <div class="step tw-mx-auto tw-mb-5">
+          Step 1
+        </div>
+        <div class="text tw-uppercase tw-mb-5 tw-text-center">
+          .Download the app
+        </div>
+        <div class="text tw-uppercase tw-mb-5 tw-text-center">
+          .once the app is installed
+        </div>
+        <div class="text tw-uppercase tw-mb-5 tw-text-center">
+          .Return to this page
+        </div>
+      </div>
+      <div>
+        <div class="step tw-mx-auto tw-mb-5">
+          Step 2
+        </div>
+        <div class="text tw-uppercase tw-mb-5 tw-text-center">
+          Click the blue button
+        </div>
+        <div>
+          <button class="cta-button tertiary tw-uppercase tw-mx-auto button-block">
+            Click<br>
+            to<br>
+            proceed
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  html, body {
+    padding: 0;
+    margin: 0;
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  .title {
+    font-size: 48px;
+    font-weight: bold;
+  }
+
+  .text {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .hero-section {
+    /* Maybe this could be 100vh  depending on what you want */
+    height: 500px;
+    width: 100%;
+    background-color: #004aad;
+    position: relative;
+  }
+
+  .hero-section .logo {
+    padding: 10px;
+    background-color: white;
+    display: inline;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .hero-section .title,
+  .hero-section .text {
+    text-align: center;
+    color: white;
+  }
+
+  .cta-button {
+    font-size: 24px;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    min-width: 150px;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+  }
+
+  label {
+    display: block;
+    max-width: 100%;
+  }
+
+  input {
+    width: 100%;
+    /*padding: 10px;*/
+    border-radius: 50px;
+    display: block;
+    padding: 0.85rem;
+  }
+  input::placeholder {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+  }
+
+  .cta-button.primary {
+    background-color: #07248E;
+  }
+
+  .cta-button.secondary {
+    background-color: #232325;
+  }
+
+  .cta-button.tertiary {
+    background-color: #1D224C;
+  }
+
+  .cta-button.button-block {
+    display: block;
+    min-width: 250px;
+    padding: 1rem 1.5rem;
+  }
+
+
+  .img-fluid {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .thankyou-joining-section {
+    background: linear-gradient(256.13deg, #FFFFFF 0%, #CDFFFC 45.83%, #00FFF2 100%);
+  }
+
+  .step {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.5rem;
+    border-radius: 30px;
+    text-align: center;
+    width: 200px;
+    font-weight: bold;
+  }
+
+
+
+</style>
